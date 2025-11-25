@@ -1,10 +1,12 @@
-import { track } from 'ripple';
 
 export component App() {
-	let count = track(0);
+	let intro = "Welcome to Mastermind in Ripple";
+	let buttonString = "Start Game";
 
 	<div class="app">
-		<div class="card">
+		<div>
+			<h1>{intro}</h1>
+			<button onClick={() => {console.log("Game Started");}}>{buttonString}</button>
 		</div>
 	</div>
 
